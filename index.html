@@ -1,11 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<p>, initial-scale=1.0">
-    <title>teste</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoria de Robert</title>
+    <link rel="icon" href="icon.png" type="image/png">
+
+    <style>
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .quadrado {
+            width: 800px;
+            height: 95%;
+            margin-top: 20px;
+            margin-bottom: 5px;
+            box-sizing: border-box;
+            background-color: #ffffff91;
+            box-shadow: 0px 0px 20px rgb(184, 184, 184);
+            color: darkred;
+            display: block;
+            font-family: Arial, sans-serif;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        img {
+            max-width: 40%;
+            height: 150px;
+            border-radius: 5%;
+            box-shadow: 0px 0px 20px rgb(0, 0, 0);
+            margin: 0;
+        }
+
+        .quadrado2 {
+            width: 750px;
+            height: auto;
+            box-sizing: border-box;
+            background-color: #222222;
+            box-shadow: 0px 0px 20px rgb(26, 26, 26);
+            color: rgb(0, 0, 0);
+            display: block;
+            font-family: Arial, sans-serif;
+            border-radius: 20px;
+            padding: 30px;
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+            color: #000000cd;
+            margin-top: 1%;
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+
+        /* Abas */
+        .abas {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .aba {
+            padding: 10px 20px;
+            background-color: #ccc;
+            cursor: pointer;
+            border-radius: 5px 5px 0 0;
+            margin-right: 5px;
+            color: black;
+            font-weight: bold;
+        }
+
+        .aba.ativa {
+            background-color: #a1a1a1;
+            border-bottom: 2px solid white;
+        }
+
+        .conteudo {
+            display: none;
+        }
+
+        .conteudo.ativo {
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <p>oi</p>
+    <div class="quadrado">
+        <h1 style="text-align: center; font-family:'Times New Roman', Times, serif; color: black">Teoria de Robert Johnson</h1>
+        <div class="abas">
+            <div class="aba ativa" onclick="mostrarAba(0)">Biografia</div>
+            <div class="aba" onclick="mostrarAba(1)">Pontos Positivos</div>
+            <div class="aba" onclick="mostrarAba(2)">Pontos Negativos</div>
+            <div class="aba" onclick="mostrarAba(3)">Opinião Pessoal</div>
+        </div>
+
+        <div class="conteudo ativo">
+            <div style="display: flex; gap: 20px;">
+                <img src="robert2.jpg" alt="Robert">
+                <p>
+                    <span style="float: left; font-size: 3em; line-height: 1; margin-right: 8px; font-weight: bold;">R</span>obert Johnson foi um cantor, compositor e guitarrista norte-americano nascido em
+                    <span style="color: rgb(48, 64, 241); text-decoration: underline;">8 de maio de 1911</span>, no Mississippi.
+                    É amplamente considerado uma das figuras mais importantes e enigmáticas da história do blues.
+                    Apesar de ter morrido jovem, em <span style="color: rgb(48, 64, 241); text-decoration: underline;">16 de agosto de 1938</span>, aos 27 anos, seu impacto na música foi imenso.
+                    Ele gravou apenas 29 músicas entre <span style="color: rgb(48, 64, 241); text-decoration: underline;">1936 e 1937</span>, mas essas gravações o tornaram uma lenda.
+                    Johnson é conhecido por sua habilidade extraordinária no violão e por canções como "Cross Road Blues", 
+                    "Hellhound on My Trail" e "Love in Vain", que influenciaram músicos como Eric Clapton e Keith Richards.
+                </p>
+            </div>
+            <p>
+                Uma das histórias mais famosas sobre Robert Johnson é a lenda de que ele teria feito um pacto com o diabo.
+                De acordo com essa narrativa, em uma noite escura, Johnson foi até uma encruzilhada — um símbolo carregado de significado espiritual e místico —
+                onde um estranho lhe afinou o violão e lhe deu habilidades musicais sobre-humanas. Essa transformação repentina intrigou colegas músicos da época,
+                que o viram passar de um instrumentista comum para um virtuoso do blues em pouquíssimo tempo. Essa lenda não apenas reforçou sua fama,
+                mas também se tornou um dos mitos fundadores do blues como um gênero profundamente ligado à emoção, à dor e ao sobrenatural.
+                A morte de Johnson permanece envolta em mistério. Ele morreu de forma súbita, em circunstâncias pouco documentadas, em Greenwood, Mississippi.
+                Alguns relatos dizem que ele foi envenenado após flertar com a esposa de um homem ciumento, enquanto outros sugerem causas naturais agravadas por sífilis ou pneumonia.
+                Há ainda teorias que apontam para uma briga ou assassinato. Até hoje, existem pelo menos três túmulos marcando possíveis locais de seu enterro,
+                mas nenhum deles é oficialmente reconhecido. Esse mistério só aumenta o fascínio em torno de sua figura, tornando-o ainda mais lendário.
+                Apesar de sua curta carreira e de ter vivido em uma época em que músicos negros enfrentavam extrema marginalização, o legado de Robert Johnson resistiu ao tempo.
+                Em <span style="color: rgb(48, 64, 241); text-decoration: underline;">1986</span>, ele foi introduzido no Rock and Roll Hall of Fame como um "Influencer".
+                Em <span style="color: rgb(48, 64, 241); text-decoration: underline;">1990</span>, a coletânea <em>The Complete Recordings</em> foi lançada, recebendo aclamação crítica e sendo responsável por apresentar Johnson a milhões de novos ouvintes.
+                Mesmo com uma vida curta e uma discografia limitada, Robert Johnson é considerado um dos pilares do blues e uma influência direta para o surgimento do rock and roll.
+                O mito do homem que vendeu sua alma por habilidade musical ecoa até hoje, fazendo de Johnson uma das figuras mais intrigantes do século XX<a href="file:///D:/Trabalho%20maneiro/%E3%85%A4%E3%85%A4.html" target="_blank">.</a>
+            </p>
+        </div>
+
+        <div class="conteudo">
+            <p style="text-align: center;font-size: 50px;"><br><br><br><br>Conteudo2<br><br><br><br><br></p>
+        </div>
+        <div class="conteudo">
+            <p style="text-align: center;font-size: 50px;"><br><br><br><br>Conteudo3<br><br><br><br><br></p>
+        </div>
+        <div class="conteudo">
+            <p style="text-align: center;font-size: 50px;"><br><br><br><br>Conteudo4<br><br><br><br><br></p>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        function mostrarAba(indice) {
+            const abas = document.querySelectorAll('.aba');
+            const conteudos = document.querySelectorAll('.conteudo');
+
+            abas.forEach((aba, i) => {
+                aba.classList.toggle('ativa', i === indice);
+                conteudos[i].classList.toggle('ativo', i === indice);
+            });
+        }
+    </script>
 </body>
 </html>
